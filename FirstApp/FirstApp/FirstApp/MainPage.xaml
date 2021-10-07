@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstApp.MainPage"
+             BackgroundColor="WhiteSmoke"
+             BackgroundImageSource="https://cdn.wallpapersafari.com/49/34/pr2A9D.jpg">
+    
+    <StackLayout >
+        <Label HorizontalOptions="EndAndExpand"
+               FontSize="Micro"
+               TextColor="CornflowerBlue"
+               x:Name="date"/>
+        <Label HorizontalOptions="EndAndExpand"
+               FontSize="Micro" 
+               TextColor="CornflowerBlue"
+               x:Name="time"/>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <Label  Text="Login Page" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="Large" 
+                    TextColor="White"
+                    Margin="0,0,0,15"
+                    FontAttributes="Bold"/>
+            
+            <Entry  Placeholder="Enter username" 
+                    HorizontalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    PlaceholderColor="White"
+                    Margin="0,15,0,2"
+                    x:Name="username"/>
+            
+            <Entry  Placeholder="Enter password"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    IsPassword="True"
+                    PlaceholderColor="White"
+                    Margin="0,15,0,0"
+                    x:Name="password"/>
+           
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="5,0,5,5">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Clear"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Margin="0,0,0,0" 
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Transparent" 
+                        TextColor="CornflowerBlue"
+                        Clicked="clearEntry"/>
+                
+                <Button Text="Login"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Margin="0,0,0,0"
+                        HorizontalOptions="FillAndExpand" 
+                        BackgroundColor="Transparent" 
+                        TextColor="CornflowerBlue"
+                        Clicked="loginUser"/>
+            </StackLayout>
+                <Button     Text="Exit"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Margin="0,0,0,0"
+                        HorizontalOptions="FillAndExpand" 
+                        BackgroundColor="Transparent" 
+                        TextColor="CornflowerBlue"/>
+        </StackLayout>
+       
+    </StackLayout>
+
+</ContentPage>
